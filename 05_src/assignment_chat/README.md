@@ -13,8 +13,7 @@ WeatherCHAT is a weather chatbot created to answer questions related to current 
 WeatherCHAT is a weather chatbot created has the below repository structure.
 
 ```
-05_src
-
+05_src 
 |  assignment_chat
 |  |-- README.md                    <- README file 
 |  |-- app.py                       <- Gradio user interface
@@ -33,51 +32,51 @@ WeatherCHAT is a weather chatbot created has the below repository structure.
 Figure 1: WeatherCHAT repository structure
 
 
-The submission includes files under assignment_chat only. Secrets and utils data are not shared. 
+The submission includes files under folder assignment_chat only. Secrets and utils data are not shared. 
 
 ## 3.0 WeatherCHAT Architecture
 
-The weather chatbot has the following architecture. It comprises of 3 services and a simple chat interface. It retrieves current weather around the world using the Weatherstack API and performs semantic search to answer questions related to meterological terminology. LLM orchestration is implemented to enable the chatbot to determine whether to answer questions from the user directly or use tools including get current weather details or perform semantic query using embeddings specifically developed to interpret the meanings of weather related attributes. 
+The weather chatbot has the following architecture. It comprises of 3 services and a simple chat interface. It retrieves current weather around the world using the Weatherstack API and performs semantic search to answer questions related to meterological terminology. LLM orchestration is implemented to enable the chatbot to determine whether to answer questions from the user directly or to use tools to get either current weather details or perform semantic query using embeddings specifically developed to explain weather related concepts. 
 
 ```
-                                       User
-                                        │
-                                        V
-                               Gradio Web UI (app.py)
-                                        │
-                                        V
-                           assignment_chat(message) (main.py)
-                                        │
-                                        V
-                          OpenAI Responses API (GPT-4o-mini)
-                   decides whether to answer directly or use tools
-                                        │
-             ┌──────────────────────────┴──────────────────────────┐
-             V                                                     V
-   Service 2: Semantic Query                          Service 3: Function Calling
-             │                                                     │
-             V                                                     V
+                                User
+                                |        
+                                V        
+                                Gradio Web UI (app.py)
+                                │
+                                V
+                                assignment_chat(message) (main.py)
+                                │
+                                V
+                                OpenAI Responses API (GPT-4o-mini)
+                                Decides whether to answer directly or use tools
+                                │
+             ┌───────────────────────────────────────────────────┐
+             V                                                   V
+Service 2: Semantic Query                               Service 3: Function Calling
+             │                                                   │
+             V                                                   V
 semantic_weather_search(query)                          get_weather(city)
-             │                                                     │
-             V                                                     V
-client.embeddings.create()                     get_weather_from_service(city)
-             │                                                     │
-             V                                                     V
-      Query Embedding                              Service 1: WeatherStack Current Weather API
-             │                                                     │
-             V                                                     V
-     cosine_similarity()                            get_weather_from_response()
-             │                                                     │
-             V                                                     V
-Top matching glossary entries                      Structured weather information
-             └──────────────────────────┬──────────────────────────┘
-                                        │
-                                        V
-                                   GPT-4o-mini 
-                        generates natural language response
-                                        │
-                                        V
-                                       User
+             │                                                   │
+             V                                                   V
+client.embeddings.create()                              get_weather_from_service(city)
+             │                                                   │
+             V                                                   V
+Query Embedding                                         Service 1: WeatherStack Current Weather API
+             │                                                   │
+             V                                                   V
+cosine_similarity()                                     get_weather_from_response()
+             │                                                   │
+             V                                                   V
+Top matching glossary entries                           Structured weather information
+             └───────────────────────────────────────────────────┘
+                                │
+                                V
+                                GPT-4o-mini 
+                                generates natural language response
+                                │
+                                V
+                                User
 ```
 Figure 2: WeatherCHAT's workflow illustrating the 3 services available to support (1) API call to Weatherstack to retrieve current weather, (2) semantic search to answer questions related to meterological terminology, (3) custom functions that support interpreting user inquiries using LLM and then routing the questions to either the get_weather() or semantic_weather_search() function to provide a proper response back to the user. 
 
@@ -86,7 +85,7 @@ Figure 2: WeatherCHAT's workflow illustrating the 3 services available to suppor
 
 The weather chatbot provides the following services. 
 
-### 4.1 Service 1: API Calls (Current weather retrieval)
+### 4.1 Service 1 - API Calls (Current weather retrieval)
 
 The chatbot has the ability to retrieve current weather of any city provided by the user using an API call to [Weatherstack](https://weatherstack.com/). The weather conditions that could be retrieved include:
 - Temperature: Current temperature in degrees Celsius.
@@ -99,45 +98,45 @@ The chatbot has the ability to retrieve current weather of any city provided by 
 The retrieval of current weather has the below workflow. 
 
 ```
-                  User
-                    │
-                    V
-         assignment_chat(message)
-                    │
-                    V
-      First GPT-4o-mini API call (LLM)
-                    │
-                    V
-      Function Call: get_weather(city)
-                    │
-                    V
-       get_weather_from_service(city)
-                    │
-                    V
+User inquires
+        │
+        V
+assignment_chat(message)
+        │
+        V
+First GPT-4o-mini API call (LLM)
+        │
+        V
+Function Call: get_weather(city)
+        │
+        V
+get_weather_from_service(city)
+        │
+        V
 Weatherstack REST API call (***Service 1***)
-                    │
-                    V
-          JSON Weather Response
-                    │
-                    V
-        get_weather_from_response()
-                    │
-                    V
-           function_call_output
-                    │
-                    V
-    Second GPT-4o-mini API Call (LLM)
-                    │
-                    V
-         Natural language response
-                    │
-                    V
-                  User
+        │
+        V
+JSON Weather Response
+        │
+        V
+get_weather_from_response()
+        │
+        V
+function_call_output
+        │
+        V
+Second GPT-4o-mini API Call (LLM)
+        │
+        V
+Natural language response
+        │
+        V
+User receives response
 ```
 Figure 3: Diagram showing where the Weatherstack and API call occurs in the workflow to retrieve current weather details.
 
 
-### 4.2 Service 2: Semantic Query
+### 4.2 Service 2 - Semantic Query
 
 Aside from retrieving current weather info, the chatbot also has a semantic query service that could answer questions related to weather and meterology terminology. Users could ask the chatbot questions such as: "What does El Niño mean?", "What is snow?", "How is humidity determined?", etc. The semantic search knowledge base was constructed using meterological definitions adapted from publicly available glossaries including those from the [US National Weather Service](https://forecast.weather.gov/glossary.php?) and[The Government of Canada](https://www.canada.ca/en/environment-climate-change/services/weather-general-tools-resources/glossary.html#wsglossaryH). The entries were structured into JSON format to support embedding generation and semantic retrieval. 
 
@@ -176,11 +175,14 @@ GPT-4o-mini (LLM)
         │
         V
 Natural explanation
+        │
+        V
+User receives response
 ```
 Figure 4: Diagram showing the workflow that supports semantic query to tackle questions from users related to meterological terminology. 
 
 
-### 4.3 Service 3: Customized functions
+### 4.3 Service 3 - Customized functions
 
 Function calling is implemented to use LLM to interpret the user's request. LLM then determines if it is to invoke the get_weather() function. The get_weather function would call the Weatherstack API using the get_weather_from_service() funciton to retrieve weather data, it will then feed the weather data into the get_weather_from_response() function to parse the JSON response from the API and structure the data. 
 
@@ -220,6 +222,7 @@ GPT-4o-mini (LLM)
         │
         ▼
 Natural language response
+User receives response
 ```
 Figure 5: Diagram showing LLM orchestration and function calling to return natural language response of current weather.
 
