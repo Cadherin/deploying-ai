@@ -1,0 +1,242 @@
+[
+  {
+    "topic": "Weather",
+    "text": "Weather describes the short-term condition of the atmosphere at a specific place and time. It includes variables such as temperature, humidity, wind, cloud cover, precipitation, and atmospheric pressure. Weather can change from hour to hour or day to day, unlike climate which describes long-term patterns."
+  },
+  {
+    "topic": "Temperature",
+    "text": "Temperature measures how hot or cold the atmosphere is. Air temperature is commonly measured using thermometers at weather stations and is reported in degrees Celsius or Fahrenheit. Temperature affects evaporation, cloud formation, precipitation, and how comfortable outdoor conditions feel."
+  },
+  {
+    "topic": "Feels Like Temperature",
+    "text": "Feels like temperature describes how warm or cold the environment feels to humans rather than the actual measured air temperature. It considers additional factors such as humidity, wind speed, and radiation from the sun. It is useful for understanding human comfort and potential weather-related health risks."
+  },
+  {
+    "topic": "Heat Index",
+    "text": "Heat index estimates how hot conditions feel by combining air temperature and humidity. High humidity slows the evaporation of sweat from the skin, reducing the body's ability to cool itself. Heat index values help communicate the risk of heat stress during warm weather."
+  },
+  {
+    "topic": "Wind Chill",
+    "text": "Wind chill describes how cold conditions feel when wind increases heat loss from exposed skin. It combines air temperature and wind speed to estimate the cooling effect of moving air. Wind chill is especially important during cold weather because it can increase the risk of frostbite and hypothermia."
+  },
+  {
+    "topic": "Humidity",
+    "text": "Humidity describes the amount of water vapour present in the atmosphere. Relative humidity compares the current amount of moisture in the air with the maximum amount the air can hold at the same temperature. High humidity can make warm weather feel uncomfortable because sweat evaporates more slowly."
+  },
+  {
+    "topic": "Relative Humidity",
+    "text": "Relative humidity is the percentage of water vapour in the air compared with the maximum amount of moisture the air can contain at a given temperature. Warm air can hold more moisture than cold air, so relative humidity depends on both moisture content and temperature."
+  },
+  {
+    "topic": "Dew Point",
+    "text": "Dew point is the temperature at which air becomes saturated with water vapour and condensation begins. A higher dew point indicates more moisture in the atmosphere and often corresponds to humid conditions. Dew point is commonly used to describe how comfortable or muggy the air feels."
+  },
+  {
+    "topic": "Absolute Humidity",
+    "text": "Absolute humidity describes the actual amount of water vapour contained in a specific volume of air. Unlike relative humidity, it is not affected by changes in temperature. It provides a direct measurement of atmospheric moisture content."
+  },
+  {
+    "topic": "Wind Speed",
+    "text": "Wind speed measures how fast air is moving through the atmosphere. It is usually measured using an anemometer and reported in kilometres per hour, metres per second, or miles per hour. Wind speed influences evaporation, temperature perception, transportation, and storm intensity."
+  },
+  {
+    "topic": "Wind Direction",
+    "text": "Wind direction describes the direction from which wind originates. It is commonly reported using compass directions such as north, south, east, and west. Wind direction helps meteorologists understand air movement and track weather systems."
+  },
+  {
+    "topic": "Wind Gust",
+    "text": "A wind gust is a sudden increase in wind speed that lasts for a short period of time. Gusts are often stronger than the average wind speed and can occur during storms, thunderstorms, or when air moves over uneven terrain."
+  },
+  {
+    "topic": "Atmospheric Pressure",
+    "text": "Atmospheric pressure is the force exerted by the weight of air above Earth's surface. Changes in atmospheric pressure are associated with changing weather conditions. High pressure systems often bring stable weather, while low pressure systems are frequently associated with clouds and precipitation."
+  },
+  {
+    "topic": "High Pressure System",
+    "text": "A high pressure system occurs when air pressure is higher than surrounding areas. Air generally sinks within high pressure systems, which limits cloud formation and often produces clear and stable weather conditions."
+  },
+  {
+    "topic": "Low Pressure System",
+    "text": "A low pressure system occurs when atmospheric pressure is lower than surrounding areas. Air rises within low pressure systems, allowing clouds to develop and increasing the likelihood of precipitation and unsettled weather."
+  },
+  {
+    "topic": "Precipitation",
+    "text": "Precipitation is water that falls from the atmosphere to Earth's surface. It includes rain, snow, sleet, freezing rain, and hail. Precipitation occurs when water droplets or ice particles in clouds become large enough to fall due to gravity."
+  },
+  {
+    "topic": "Rain",
+    "text": "Rain is liquid precipitation consisting of water droplets that fall from clouds. Rain forms when droplets within clouds combine and become too heavy to remain suspended in the atmosphere. Rainfall intensity and duration influence flooding, agriculture, and water resources."
+  },
+  {
+    "topic": "Drizzle",
+    "text": "Drizzle is a type of light precipitation made up of very small water droplets. It usually falls from low-level clouds such as stratus clouds and produces less rainfall than typical rain events."
+  },
+  {
+    "topic": "Snow",
+    "text": "Snow is frozen precipitation made of ice crystals that form in clouds when temperatures are cold enough. Snow formation depends on temperature, moisture availability, and atmospheric conditions. Snowfall can affect transportation, ecosystems, and water storage."
+  },
+  {
+    "topic": "Freezing Rain",
+    "text": "Freezing rain occurs when liquid raindrops fall through cold air near the surface and freeze when they contact objects on the ground. It can create dangerous ice accumulation on roads, trees, and power infrastructure."
+  },
+  {
+    "topic": "Sleet",
+    "text": "Sleet consists of small ice pellets that form when snow partially melts and refreezes before reaching the ground. It commonly occurs during winter storms when temperatures vary through different layers of the atmosphere."
+  },
+  {
+    "topic": "Hail",
+    "text": "Hail is precipitation made of balls or irregular pieces of ice that form inside strong thunderstorms. Powerful upward air currents allow ice particles to grow larger before falling to the ground."
+  },
+  {
+    "topic": "Cloud Cover",
+    "text": "Cloud cover describes the amount of the sky covered by clouds. Clouds influence temperature by affecting how much sunlight reaches the surface and how much heat escapes into space. Cloud cover is an important observation used in weather forecasting."
+  },
+  {
+    "topic": "Cloud Formation",
+    "text": "Clouds form when moist air rises, cools, and reaches saturation. Water vapour then condenses around tiny particles in the atmosphere called condensation nuclei. The type and height of clouds provide information about atmospheric conditions."
+  },
+  {
+    "topic": "Cumulus Clouds",
+    "text": "Cumulus clouds are fluffy clouds with rounded tops and flat bases. They often appear during fair weather but can grow vertically into storm clouds when atmospheric instability increases."
+  },
+  {
+    "topic": "Stratus Clouds",
+    "text": "Stratus clouds are low-level clouds that form in broad layers covering much of the sky. They often produce cloudy conditions and may be associated with drizzle or light precipitation."
+  },
+  {
+    "topic": "Cirrus Clouds",
+    "text": "Cirrus clouds are thin, high-altitude clouds made mostly of ice crystals. They often appear as wispy streaks and can indicate changes in weather patterns when they increase ahead of approaching systems."
+  },
+  {
+    "topic": "Cumulonimbus Clouds",
+    "text": "Cumulonimbus clouds are tall, vertically developed clouds associated with thunderstorms. They can produce heavy rain, lightning, strong winds, hail, and occasionally tornadoes."
+  },
+  {
+    "topic": "Thunderstorm",
+    "text": "A thunderstorm is a weather event characterized by lightning and thunder. Thunderstorms form when warm, moist air rises rapidly in an unstable atmosphere. They can produce heavy rainfall, strong winds, hail, and severe weather hazards."
+  },
+  {
+    "topic": "Lightning",
+    "text": "Lightning is a sudden electrical discharge that occurs within clouds, between clouds, or between clouds and the ground. Lightning is commonly associated with thunderstorms and can create hazards such as fires and injuries."
+  },
+  {
+    "topic": "Weather Forecast",
+    "text": "A weather forecast is a prediction of future atmospheric conditions based on observations, scientific models, and meteorological analysis. Forecasts commonly include temperature, precipitation, wind speed, humidity, cloud cover, and severe weather risks."
+  },
+  {
+    "topic": "Meteorology",
+    "text": "Meteorology is the scientific study of Earth's atmosphere and weather processes. Meteorologists analyze atmospheric conditions, weather observations, satellite imagery, radar data, and computer models to understand and predict weather patterns."
+  },
+  {
+    "topic": "Weather Station",
+    "text": "A weather station is a collection of instruments used to measure atmospheric conditions. Common measurements include temperature, humidity, wind speed, wind direction, precipitation, and atmospheric pressure. Weather stations provide important data for forecasting and climate monitoring."
+  },
+  {
+    "topic": "Weather Radar",
+    "text": "Weather radar uses radio waves to detect precipitation and estimate its location, movement, and intensity. Radar observations help meteorologists track rainfall, thunderstorms, and severe weather events in near real time."
+  },
+  {
+    "topic": "Weather Satellite",
+    "text": "Weather satellites observe Earth from space and provide information about clouds, storms, atmospheric moisture, and large-scale weather patterns. Satellite imagery is important for monitoring weather systems over large regions, including oceans where ground observations are limited."
+  },
+  {
+    "topic": "Numerical Weather Prediction",
+    "text": "Numerical weather prediction uses mathematical models running on computers to simulate atmospheric processes and predict future weather conditions. These models use observations such as temperature, pressure, humidity, and wind measurements as initial conditions."
+  },
+  {
+    "topic": "Cold Front",
+    "text": "A cold front occurs when a colder air mass advances and replaces warmer air. Cold fronts often produce changes in temperature, wind direction, cloud formation, and precipitation. They may be associated with thunderstorms or rapidly changing weather."
+  },
+  {
+    "topic": "Warm Front",
+    "text": "A warm front occurs when a warmer air mass moves over and replaces colder air. Warm fronts typically produce gradual changes in weather and may bring increasing cloud cover and periods of steady precipitation."
+  },
+  {
+    "topic": "Air Mass",
+    "text": "An air mass is a large body of air with relatively uniform temperature and humidity characteristics. Air masses form over specific regions and influence the weather conditions when they move into new areas."
+  },
+  {
+    "topic": "Jet Stream",
+    "text": "A jet stream is a narrow band of strong winds located high in the atmosphere. Jet streams influence the movement of weather systems and help guide storms across continents. Their position can affect temperature patterns and seasonal weather."
+  },
+  {
+    "topic": "Sea Breeze",
+    "text": "A sea breeze is a local wind that develops when land heats faster than nearby water during the day. Warm air rises over the land, causing cooler air from the water to move inland. Sea breezes can moderate coastal temperatures."
+  },
+  {
+    "topic": "Land Breeze",
+    "text": "A land breeze occurs when land cools faster than water, usually at night. Cooler air over land moves toward warmer water, creating a local wind pattern opposite to a sea breeze."
+  },
+  {
+    "topic": "Tornado",
+    "text": "A tornado is a rapidly rotating column of air extending from a thunderstorm cloud toward the ground. Tornadoes can produce extremely strong winds and cause significant damage along a narrow path."
+  },
+  {
+    "topic": "Hurricane",
+    "text": "A hurricane is a large tropical cyclone with organized thunderstorms and sustained strong winds. Hurricanes form over warm ocean waters and can produce heavy rainfall, storm surge, flooding, and damaging winds."
+  },
+  {
+    "topic": "Tropical Storm",
+    "text": "A tropical storm is a tropical cyclone with organized circulation and lower wind speeds than a hurricane. Tropical storms can still produce dangerous rainfall, flooding, and strong winds."
+  },
+  {
+    "topic": "Blizzard",
+    "text": "A blizzard is a severe winter storm characterized by strong winds, blowing snow, and reduced visibility. The combination of snow and wind can create hazardous travel conditions and dangerous exposure risks."
+  },
+  {
+    "topic": "Heat Wave",
+    "text": "A heat wave is an extended period of unusually hot weather compared with typical conditions for a region. Heat waves can increase health risks, especially when combined with high humidity and limited nighttime cooling."
+  },
+  {
+    "topic": "Cold Wave",
+    "text": "A cold wave is a period of unusually cold temperatures that lasts for several days or longer. Cold waves can create risks such as frostbite, freezing conditions, transportation disruptions, and increased energy demand."
+  },
+  {
+    "topic": "Frost",
+    "text": "Frost occurs when water vapour freezes into ice crystals on surfaces near the ground. Frost commonly develops during clear nights when temperatures fall close to or below the freezing point."
+  },
+  {
+    "topic": "Evaporation",
+    "text": "Evaporation is the process where liquid water changes into water vapour and enters the atmosphere. Evaporation is influenced by temperature, humidity, wind speed, and sunlight."
+  },
+  {
+    "topic": "Condensation",
+    "text": "Condensation occurs when water vapour changes into liquid water. This process creates clouds, fog, dew, and precipitation when atmospheric conditions allow moisture to accumulate."
+  },
+  {
+    "topic": "Fog",
+    "text": "Fog is a cloud that forms near the Earth's surface when air becomes saturated with moisture. Fog reduces visibility and can affect transportation, aviation, and daily activities."
+  },
+  {
+    "topic": "Severe Weather Warning",
+    "text": "A severe weather warning is an alert issued when dangerous weather conditions are occurring or expected. Warnings help people prepare for hazards such as thunderstorms, tornadoes, flooding, hurricanes, and extreme temperatures."
+  },
+  {
+    "topic": "Climate",
+    "text": "Climate describes the long-term patterns of weather conditions in a region, typically measured over decades. Climate includes average temperature, precipitation patterns, seasonal changes, and the frequency of extreme events."
+  },
+  {
+    "topic": "Climate Change",
+    "text": "Climate change refers to long-term changes in Earth's climate patterns. These changes include shifts in temperature, precipitation, sea level, and the frequency or intensity of some extreme weather events."
+  },
+  {
+    "topic": "Greenhouse Effect",
+    "text": "The greenhouse effect is the natural process where certain gases in Earth's atmosphere trap heat and help maintain temperatures suitable for life. Human activities have increased greenhouse gas concentrations, contributing to global warming."
+  },
+  {
+    "topic": "El Niño",
+    "text": "El Niño is a climate pattern involving unusually warm ocean temperatures in the central and eastern tropical Pacific Ocean. It can influence global weather patterns, affecting precipitation, temperature, and storm activity in different regions."
+  },
+  {
+    "topic": "La Niña",
+    "text": "La Niña is a climate pattern involving unusually cool ocean temperatures in the central and eastern tropical Pacific Ocean. It can influence atmospheric circulation and create changes in rainfall and temperature patterns worldwide."
+  },
+  {
+    "topic": "Beaufort Scale",
+    "text": "The Beaufort scale is a system for describing wind strength based on observed effects of wind on land or sea. It provides categories ranging from calm conditions to hurricane-force winds."
+  },
+  {
+    "topic": "Atmospheric Stability",
+    "text": "Atmospheric stability describes how easily air moves vertically in the atmosphere. Stable air tends to suppress cloud development, while unstable air encourages rising motion and can contribute to thunderstorms and severe weather."
+  }
+]
